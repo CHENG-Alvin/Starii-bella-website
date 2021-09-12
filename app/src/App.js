@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Videos from "./Videos.js";
-import Shop from "./Shop.js";
-import Home from "./Home.js";
+import Videos from "./components/Videos.js";
+import Shop from "./components/Shop.js";
+import Home from "./components/Home.js";
 import "./App.css";
 
 function App() {
