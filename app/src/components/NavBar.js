@@ -1,6 +1,10 @@
+//Importing packages
 import React from "react";
 import { Link } from "react-router-dom";
+
+//Navbar component
 const NavBar = (props) => {
+  //Styles:
   const linkStyle = {
     color: props.color,
     backgroundColor: props.backgroundColor,
@@ -16,6 +20,8 @@ const NavBar = (props) => {
     paddingTop: "40px",
   };
   const containerStyle = { margin: "auto" };
+
+  //Rendering component
   return (
     <div style={parentStyle}>
       <div style={containerStyle}>
@@ -35,4 +41,6 @@ const NavBar = (props) => {
     </div>
   );
 };
+
+//Export component
 export default NavBar;
