@@ -1,13 +1,46 @@
+//Importing packages
 import React from "react";
 import NavBar from "./NavBar.js";
-import bannerVideo from "../content/WIN_20210912_09_19_38_Pro.mp4";
+import bannerVideo from "../content/bannerVideo.mp4";
+import bannerImage from "../content/icon.jpg";
+import "./Main.css";
+import YoutubeLink from "./YoutubeLink.js";
+
+//Banner component
 const Banner = () => {
+  //Render component
   return (
     <div>
-      <NavBar backgroundColor="transparent" color="white"></NavBar>
-      <video src={bannerVideo} autoPlay loop />
+      {/*Navbar*/}
+      <NavBar
+        backgroundColor="transparent"
+        color="white"
+        id="bannerNavbar"
+      ></NavBar>
+      {/*Banner Content*/}
+      <div id="bannerContent">
+        {/*Channel Icon*/}
+        <img id="bannerIcon" src={bannerImage} />
+        <div id="bannerText">
+          {/*Channel name*/}
+          <h1 id="bannerChannelName">Starii Bella.</h1>
+          {/*Channel discription*/}
+          <p id="bannerDiscription">Roblox edits, Gameplay and more!</p>
+          {/*Subscribe link*/}
+          <YoutubeLink
+            borderColor="#ffff"
+            textColor="black"
+            borderRad="0.5rem"
+            backgroundColor="#ffff"
+            text="Subscribe!"
+          />
+        </div>
+      </div>
+      {/*Background Video*/}
+      <video src={bannerVideo} autoPlay loop muted id="bannerVideo" />
     </div>
   );
 };
 
+//Export component
 export default Banner;

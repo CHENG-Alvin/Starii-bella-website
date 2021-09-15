@@ -1,5 +1,6 @@
 //Importing packages
 import React from "react";
+import "./Main.css";
 import { Link } from "react-router-dom";
 
 //Navbar component
@@ -10,9 +11,9 @@ const NavBar = (props) => {
     backgroundColor: props.backgroundColor,
     textDecoration: "none",
     fontSize: "1.5rem",
-    fontWeight: "bold",
-    fontFamily: "helvetica, Segoe UI",
+    fontFamily: "Poppins, sans-serif",
     padding: "1rem",
+    fontWeight: "bold",
   };
   const parentStyle = {
     display: "flex",

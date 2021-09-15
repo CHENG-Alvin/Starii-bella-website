@@ -1,10 +1,12 @@
+//Importing packages
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Videos from "./components/Videos.js";
 import Shop from "./components/Shop.js";
 import Home from "./components/Home.js";
 import "./App.css";
 
-function App() {
+//App
+const App = () => {
   return (
     <div className="App">
       {/*Router*/}
@@ -20,6 +22,7 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
+//Export app
 export default App;
