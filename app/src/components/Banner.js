@@ -20,7 +20,7 @@ const Banner = () => {
       {/*Banner Content*/}
       <div id="bannerContent">
         {/*Channel Icon*/}
-        <img id="bannerIcon" src={bannerImage} />
+        <img id="bannerIcon" src={bannerImage} alt="Error" />
         <div id="bannerText">
           {/*Channel name*/}
           <h1 id="bannerChannelName">Starii Bella.</h1>

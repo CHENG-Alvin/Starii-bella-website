@@ -15,7 +15,6 @@ const Links = (props) => {
       <MediaLink
         id="mediaLinks"
         textColor="#4b95df"
-        backgroundColor="black"
         text={props.btnText}
         backgroundColor="white"
         borderRad="60px 60px 60px 60px"
@@ -25,6 +24,7 @@ const Links = (props) => {
       {/*Image*/}
       <img
         id="icon"
+        alt="Error"
         src={props.imgSrc}
         style={{
           objectFit: "contain",

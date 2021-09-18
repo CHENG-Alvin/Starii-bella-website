@@ -22,7 +22,7 @@ const Shop = () => {
       <Link
         style={{
           textDecoration: "none",
-          color: "black",
+
           backgroundColor: "black",
           padding: "1rem",
           borderRadius: ".5rem",
