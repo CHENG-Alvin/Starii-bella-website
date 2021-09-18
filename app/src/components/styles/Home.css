@@ -1,0 +1,54 @@
+/*Main CSS file:*/
+@media all and (max-width: 1000px) {
+  #lowerApp {
+    z-index: 0;
+    padding-top: 40%;
+    padding-bottom: 15%;
+  }
+  #upperApp {
+    z-index: 0;
+  }
+  #links {
+    display: flex;
+    justify-content: space-around;
+  }
+  #mediaLinks {
+    padding: 1rem;
+  }
+}
+@media all and (max-width: 770px) {
+  #lowerApp {
+    z-index: 0;
+    padding-top: 30%;
+    padding-bottom: 15%;
+  }
+  #upperApp {
+    z-index: 0;
+  }
+  #links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 05% 0% 05%;
+  }
+  #mediaLinks {
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  #lowerApp {
+    z-index: 0;
+    padding-top: 37%;
+    padding-bottom: 15%;
+  }
+  #upperApp {
+    z-index: 0;
+  }
+  #links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 25% 0% 25%;
+  }
+  #mediaLinks {
+    padding: 1rem;
+  }
+}
