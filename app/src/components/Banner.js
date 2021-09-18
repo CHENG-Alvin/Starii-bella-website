@@ -3,8 +3,8 @@ import React from "react";
 import NavBar from "./NavBar.js";
 import bannerVideo from "../content/bannerVideo.mp4";
 import bannerImage from "../content/icon.jpg";
-import "./Main.css";
-import YoutubeLink from "./YoutubeLink.js";
+import "./styles/Banner.css";
+import MediaLink from "./MediaLink.js";
 
 //Banner component
 const Banner = () => {
@@ -27,12 +27,13 @@ const Banner = () => {
           {/*Channel discription*/}
           <p id="bannerDiscription">Roblox edits, Gameplay and more!</p>
           {/*Subscribe link*/}
-          <YoutubeLink
+          <MediaLink
             borderColor="#ffff"
             textColor="black"
             borderRad="0.5rem"
             backgroundColor="#ffff"
             text="Subscribe!"
+            link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
           />
         </div>
       </div>

@@ -1,0 +1,164 @@
+/*Banner CSS file:*/
+@media all and (max-width: 600px) {
+  #bannerVideo {
+    z-index: -1;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #bannerNavBar {
+    z-index: 1;
+  }
+
+  #bannerIcon {
+    border-radius: 10px;
+    object-fit: contain;
+    width: 20vh;
+    margin-left: 4rem;
+    margin-top: 2vh;
+  }
+  #bannerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  #bannerChannelName {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 9vh;
+  }
+  #bannerDiscription {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+  }
+  #bannerText {
+    margin-left: 5rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  #bannerVideo {
+    z-index: -1;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #bannerNavBar {
+    z-index: 1;
+  }
+  #bannerIcon {
+    border-radius: 10px;
+    object-fit: contain;
+    width: 30vh;
+    margin-left: 4rem;
+    margin-top: 8vh;
+  }
+  #bannerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16rem;
+  }
+  #bannerChannelName {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 10vh;
+  }
+  #bannerDiscription {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+  }
+  #bannerText {
+    margin-left: 7rem;
+  }
+  .link {
+    font-size: 5rem;
+  }
+}
+@media all and (max-width: 550px) {
+  #bannerVideo {
+    z-index: -1;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #bannerNavBar {
+    z-index: 1;
+  }
+  #bannerIcon {
+    border-radius: 10px;
+    object-fit: contain;
+    width: 17vh;
+    margin-left: 2rem;
+    margin-top: 2vh;
+  }
+  #bannerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+  #bannerChannelName {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 5vh;
+  }
+  #bannerDiscription {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+  }
+  #bannerText {
+    margin-left: 3rem;
+  }
+  .link {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 1000px) {
+  #bannerVideo {
+    z-index: -1;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  #bannerNavBar {
+    z-index: 1;
+  }
+  #bannerIcon {
+    border-radius: 10px;
+    object-fit: contain;
+    width: 22vh;
+    margin-left: 2rem;
+    margin-top: 15vh;
+  }
+  #bannerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  #bannerChannelName {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 5vh;
+  }
+  #bannerDiscription {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+  }
+  #bannerText {
+    margin-left: 3rem;
+  }
+  .link {
+    font-size: 2rem;
+  }
+}
