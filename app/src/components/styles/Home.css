@@ -1,8 +1,8 @@
 /*Main CSS file:*/
-@media all and (max-width: 1000px) {
+@media all and (min-width: 800px) and (max-width: 1000px) {
   #lowerApp {
     z-index: 0;
-    padding-top: 35%;
+    padding-top: 45%;
     padding-bottom: 15%;
   }
   #upperApp {
@@ -20,7 +20,7 @@
 @media all and (max-width: 770px) {
   #lowerApp {
     z-index: 0;
-    padding-top: 30%;
+    padding-top: 35%;
     padding-bottom: 15%;
   }
   #upperApp {
@@ -29,35 +29,17 @@
   #links {
     display: flex;
     justify-content: space-around;
-    margin: 0% 05% 0% 05%;
+    margin: 0% 20% 0% 20%;
   }
   #mediaLinks {
     padding: 1rem;
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (min-width: 770px) and (max-width: 800px) {
   #lowerApp {
     z-index: 0;
-    padding-top: 30%;
-    padding-bottom: 15%;
-  }
-  #upperApp {
-    z-index: 0;
-  }
-  #links {
-    display: flex;
-    justify-content: space-around;
-    margin: 30% 0% 30% 0%;
-  }
-  #mediaLinks {
-    padding: 1rem;
-  }
-}
-@media all and (min-width: 1000px) {
-  #lowerApp {
-    z-index: 0;
-    padding-top: 37%;
+    padding-top: 38%;
     padding-bottom: 15%;
   }
   #upperApp {
@@ -67,6 +49,24 @@
     display: flex;
     justify-content: space-around;
     margin: 0% 40% 0% 40%;
+  }
+  #mediaLinks {
+    padding: 1rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  #lowerApp {
+    z-index: 0;
+    padding-top: 45%;
+    padding-bottom: 15%;
+  }
+  #upperApp {
+    z-index: 0;
+  }
+  #links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 45% 0% 45%;
   }
   #mediaLinks {
     padding: 1rem;
