@@ -20,6 +20,7 @@ const Links = (props) => {
         borderRad="60px 60px 60px 60px"
         borderColor="#4b95df"
         link={props.link}
+        fontFamily="Bebas Neue, cursive"
       />
       {/*Image*/}
       <img
