@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b0186dd1.chunk.css",
+    "main.js": "/static/js/main.c7c174b9.chunk.js",
+    "main.js.map": "/static/js/main.c7c174b9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6beceb9b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6beceb9b.js.map",
+    "static/css/2.7104760a.chunk.css": "/static/css/2.7104760a.chunk.css",
+    "static/js/2.14b229b9.chunk.js": "/static/js/2.14b229b9.chunk.js",
+    "static/js/2.14b229b9.chunk.js.map": "/static/js/2.14b229b9.chunk.js.map",
+    "static/js/3.1624ba57.chunk.js": "/static/js/3.1624ba57.chunk.js",
+    "static/js/3.1624ba57.chunk.js.map": "/static/js/3.1624ba57.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7104760a.chunk.css.map": "/static/css/2.7104760a.chunk.css.map",
+    "static/css/main.b0186dd1.chunk.css.map": "/static/css/main.b0186dd1.chunk.css.map",
+    "static/js/2.14b229b9.chunk.js.LICENSE.txt": "/static/js/2.14b229b9.chunk.js.LICENSE.txt",
+    "static/media/bannerVideo.43d523b2.mp4": "/static/media/bannerVideo.43d523b2.mp4",
+    "static/media/discordLogo.fee1cdc1.jpg": "/static/media/discordLogo.fee1cdc1.jpg",
+    "static/media/icon.43d2647e.jpg": "/static/media/icon.43d2647e.jpg",
+    "static/media/youtubeLogo.4504d71f.png": "/static/media/youtubeLogo.4504d71f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6beceb9b.js",
+    "static/css/2.7104760a.chunk.css",
+    "static/js/2.14b229b9.chunk.js",
+    "static/css/main.b0186dd1.chunk.css",
+    "static/js/main.c7c174b9.chunk.js"
+  ]
+}
