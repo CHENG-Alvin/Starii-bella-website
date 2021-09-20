@@ -7,6 +7,7 @@ import discordLogo from "../content/discordLogo.jpg";
 import "./styles/Home.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import SubCount from "./SubCount.js";
 
 //Home component
 const Home = () => {
@@ -50,6 +51,9 @@ const Home = () => {
             link="https://discord.gg/XFTtKjwr73"
             iconPadding="8vh"
           />
+        </div>
+        <div id="subCounter" data-aos="fade-up">
+          <SubCount></SubCount>
         </div>
       </div>
     </div>
