@@ -17,16 +17,23 @@ const SubCount = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div>
-      <h1 style={{ fontFamily: "Bebas Neue, cursive" }}>Total subscribers:</h1>
-      <h1>{subCount}</h1>
+    <div style={{ backgroundColor: "#4b95df", padding: "7.5% 15% 15% 15%" }}>
+      <h1
+        style={{
+          fontFamily: "Bebas Neue, cursive",
+          color: "#ffff",
+          fontSize: "4vw",
+        }}
+      >
+        Total subscribers:
+      </h1>
+      <h1 style={{ color: "#ffff" }}>{subCount}</h1>
       <MediaLink
         style={{ paddingTop: "2rem" }}
         borderColor="#ffff"
         textColor="black"
         borderRad="0.5rem"
         backgroundColor="#ffff"
-        borderColor="black"
         text="SUBSCRIBE NOW!"
         link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
       />
