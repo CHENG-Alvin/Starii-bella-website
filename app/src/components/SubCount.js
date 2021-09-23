@@ -1,16 +1,17 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
+import { API_KEY } from "../vars.js";
 
 //SubCount component
 const SubCount = () => {
   //SubCount variable
-  let [subCount, setSubCount] = useState(0);
+  let [subCount, setSubCount] = useState("Error");
   //Useffect hook
   useEffect(() => {
     //Get data from youtube API
     fetch(
-      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCXc3hzORGb-osun3RcY0oOw&key=${process.env.API_KEY}`
+      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`
     )
       .then((res) => {
         return res.json();
