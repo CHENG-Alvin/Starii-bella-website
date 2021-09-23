@@ -1,6 +1,6 @@
 //Importing packages
 import React from "react";
-import "./styles/Banner.css";
+import "./styles/HomeBanner.css";
 import { Link } from "react-router-dom";
 
 //Navbar component
