@@ -1,26 +1,22 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
-import { API_KEY } from "../vars.js";
+import requests, { endPoint } from "../apiRequest.js";
 
 //SubCount component
 const SubCount = () => {
-  //SubCount variable
-  let [subCount, setSubCount] = useState("Error");
-  //Useffect hook
+  //State
+  let [subCount, setSubCount] = useState("error");
+  //API request
   useEffect(() => {
-    //Get data from youtube API
-    fetch(
-      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`
-    )
-      .then((res) => {
-        return res.json();
-      })
+    requests
+      .get(endPoint.subCount)
+
       .then((data) => {
-        setSubCount(data.items[0].statistics.subscriberCount);
+        setSubCount(data.data.items[0].statistics.subscriberCount);
       })
-      .catch((err) => console.log(err));
-  }, []);
+      .catch((err) => console.error(err));
+  });
   //Render component
   return (
     <div style={{ backgroundColor: "#4b95df", padding: "7.5% 15% 15% 15%" }}>
