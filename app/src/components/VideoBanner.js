@@ -1,11 +1,29 @@
+////////////////////////////////!!!! IN DEVELOPMENT!!!!////////////////////////////////////////////////////
+
 //Importing packages
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar.js";
 import bannerVideo from "../content/VideoPageBanner.mp4";
+import { API_KEY } from "../vars.js";
 import "./styles/VideoPageBanner.css";
 
 //Banner component
 const VideoBanner = () => {
+  useEffect(() => {
+    try {
+      fetch(
+        `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+        });
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
   //Render component
   return (
     <div>
