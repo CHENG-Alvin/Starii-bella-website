@@ -1,12 +1,17 @@
+//Importing packages
 import React from "react";
 
+//Message Component
 const Message = () => {
+  //Render component
   return (
     <div>
-      <h1 style={{ fontFamily: "Bebas Neue, cursive", paddingTop: "15vw" }}>
+      {/*Tittle*/}
+      <h2 style={{ fontFamily: "Bebas Neue, cursive", paddingTop: "15vw" }}>
         A message from Starii Bella:
-      </h1>
-      <h1
+      </h2>
+      {/*Message */}
+      <h2
         style={{
           fontFamily: "Bebas Neue, cursive",
           padding: "0vw 10vw 12vw 10vw",
@@ -17,9 +22,10 @@ const Message = () => {
         old channel was called gaming with Bella- games, but now it’s called
         Simply Metallic! My name is Bella and I hope you love my video! Also
         welcome to Starii Bella ୨୧
-      </h1>
+      </h2>
     </div>
   );
 };
 
+//Export component
 export default Message;
