@@ -4,6 +4,7 @@ import HomeBanner from "./HomeBanner.js";
 import Links from "./Links.js";
 import youtubeLogo from "../content/youtubeLogo.png";
 import discordLogo from "../content/discordLogo.jpg";
+import Comments from "./Comments.js";
 import Aos from "aos";
 import SubCount from "./SubCount.js";
 import Message from "./Message.js";
@@ -35,6 +36,10 @@ const Home = () => {
         {/*Message*/}
         <div id="message" data-aos="fade-up">
           <Message />
+        </div>
+        {/*Comments*/}
+        <div id="comments" style={{ margin: "6vw 0vw 6vw 0vw" }}>
+          <Comments />
         </div>
         {/*Links*/}
         <div id="links" data-aos="fade-up" data-aos-easing="ease-in-out">
