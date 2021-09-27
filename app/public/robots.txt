@@ -1,5 +1,5 @@
 User-agent:*
-Disallow: /
+Allow: /
 Allow: /Videos
 Disallow: /Shop
 Crawl-delay: 120
