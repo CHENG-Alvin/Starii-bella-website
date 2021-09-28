@@ -1,12 +1,11 @@
-## Starii bella website 
-<<<<<<< Home-screen
+## Starii bella website
 This website is the website that is for the Starii Bella youtube channel
 
 ### Channel link:
 https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw
-=======
+
 This github page has the opem source code of the Starii bella website! Please scroll down for more info.
-gal
+
 ## Website 
 Production ready link:
 https://starii-bella.web.app
