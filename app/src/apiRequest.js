@@ -6,7 +6,7 @@ import Axios from "axios";
 //Endpoints
 export const endPoint = {
   subCount: `/channels?part=statistics&id=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`,
-  Videos: `/search?part=snippet&channelId=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`,
+  Videos: `/search?part=snippet&channelId=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}&maxResults=1000`,
 };
 
 //Axios
