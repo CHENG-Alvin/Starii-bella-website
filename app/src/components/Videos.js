@@ -1,5 +1,6 @@
 //Importing packages
 import React from "react";
+import VideoDisplay from "./VideoDisplay.js";
 import VideoBanner from "./VideoBanner.js";
 
 //Shop page
@@ -8,6 +9,7 @@ const Videos = () => {
   return (
     <div>
       <VideoBanner />
+      <VideoDisplay />
     </div>
   );
 };
