@@ -1,29 +1,11 @@
-////////////////////////////////!!!! IN DEVELOPMENT!!!!////////////////////////////////////////////////////
-
 //Importing packages
-import React, { useEffect } from "react";
+import React from "react";
 import NavBar from "./NavBar.js";
 import bannerVideo from "../content/VideoPageBanner.mp4";
-import { API_KEY } from "../vars.js";
 import "./styles/VideoPageBanner.css";
 
 //Banner component
 const VideoBanner = () => {
-  useEffect(() => {
-    try {
-      fetch(
-        `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`
-      )
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          console.log(data);
-        });
-    } catch (err) {
-      console.error(err);
-    }
-  }, []);
   //Render component
   return (
     <div>
@@ -37,9 +19,9 @@ const VideoBanner = () => {
       <div id="bannerContent">
         <div id="bannerText">
           {/*Channel name*/}
-          <h1 id="bannerChannelName">Latest on Starii Bella:</h1>
+          <h1 id="bannerChannelName">Starii Bella content</h1>
           {/*Channel discription*/}
-          <p id="bannerDiscription">Roblox edits, Gameplay and more!</p>
+          <p id="bannerDiscription">Watch here now!</p>
         </div>
       </div>
       {/*Background Video*/}
