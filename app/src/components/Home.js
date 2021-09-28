@@ -1,14 +1,16 @@
 //Import packages
 import React, { useEffect } from "react";
-import Banner from "./Banner.js";
+import HomeBanner from "./HomeBanner.js";
 import Links from "./Links.js";
 import youtubeLogo from "../content/youtubeLogo.png";
 import discordLogo from "../content/discordLogo.jpg";
-import "./styles/Home.css";
+import Comments from "./Comments.js";
 import Aos from "aos";
-import "aos/dist/aos.css";
 import SubCount from "./SubCount.js";
+import Message from "./Message.js";
+import "aos/dist/aos.css";
 
+import "./styles/Home.css";
 //Home component
 const Home = () => {
   //Aos Init
@@ -27,10 +29,18 @@ const Home = () => {
       {/*Upper app*/}
       <div id="upperApp">
         {/*Banner*/}
-        <Banner />
+        <HomeBanner />
       </div>
       {/*Lower app*/}
       <div id="lowerApp">
+        {/*Message*/}
+        <div id="message" data-aos="fade-up">
+          <Message />
+        </div>
+        {/*Comments*/}
+        <div id="comments" style={{ margin: "6vw 0vw 6vw 0vw" }}>
+          <Comments />
+        </div>
         {/*Links*/}
         <div id="links" data-aos="fade-up" data-aos-easing="ease-in-out">
           {/*Youtube link*/}

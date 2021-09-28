@@ -3,11 +3,11 @@ import React from "react";
 import NavBar from "./NavBar.js";
 import bannerVideo from "../content/bannerVideo.mp4";
 import bannerImage from "../content/icon.jpg";
-import "./styles/Banner.css";
+import "./styles/HomeBanner.css";
 import MediaLink from "./MediaLink.js";
 
 //Banner component
-const Banner = () => {
+const HomeBanner = () => {
   //Render component
   return (
     <div>
@@ -44,4 +44,4 @@ const Banner = () => {
 };
 
 //Export component
-export default Banner;
+export default HomeBanner;

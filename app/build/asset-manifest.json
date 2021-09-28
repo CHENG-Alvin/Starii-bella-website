@@ -1,29 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0186dd1.chunk.css",
-    "main.js": "/static/js/main.05017cc8.chunk.js",
-    "main.js.map": "/static/js/main.05017cc8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4fc5921c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4fc5921c.js.map",
+    "main.css": "/static/css/main.227fa7c6.chunk.css",
+    "main.js": "/static/js/main.cf9823d1.chunk.js",
+    "main.js.map": "/static/js/main.cf9823d1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.df5d7dd0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.df5d7dd0.js.map",
     "static/css/2.7104760a.chunk.css": "/static/css/2.7104760a.chunk.css",
-    "static/js/2.1d36eebb.chunk.js": "/static/js/2.1d36eebb.chunk.js",
-    "static/js/2.1d36eebb.chunk.js.map": "/static/js/2.1d36eebb.chunk.js.map",
-    "static/js/3.b214de65.chunk.js": "/static/js/3.b214de65.chunk.js",
-    "static/js/3.b214de65.chunk.js.map": "/static/js/3.b214de65.chunk.js.map",
+    "static/js/2.c54fd09b.chunk.js": "/static/js/2.c54fd09b.chunk.js",
+    "static/js/2.c54fd09b.chunk.js.map": "/static/js/2.c54fd09b.chunk.js.map",
+    "static/js/3.3d827f29.chunk.js": "/static/js/3.3d827f29.chunk.js",
+    "static/js/3.3d827f29.chunk.js.map": "/static/js/3.3d827f29.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7104760a.chunk.css.map": "/static/css/2.7104760a.chunk.css.map",
-    "static/css/main.b0186dd1.chunk.css.map": "/static/css/main.b0186dd1.chunk.css.map",
-    "static/js/2.1d36eebb.chunk.js.LICENSE.txt": "/static/js/2.1d36eebb.chunk.js.LICENSE.txt",
+    "static/css/main.227fa7c6.chunk.css.map": "/static/css/main.227fa7c6.chunk.css.map",
+    "static/js/2.c54fd09b.chunk.js.LICENSE.txt": "/static/js/2.c54fd09b.chunk.js.LICENSE.txt",
+    "static/media/Comment1.a5bb5365.PNG": "/static/media/Comment1.a5bb5365.PNG",
+    "static/media/Comment2.fab625bd.PNG": "/static/media/Comment2.fab625bd.PNG",
+    "static/media/Comment3.28a2a531.PNG": "/static/media/Comment3.28a2a531.PNG",
+    "static/media/VideoPageBanner.9d6f1475.mp4": "/static/media/VideoPageBanner.9d6f1475.mp4",
     "static/media/bannerVideo.43d523b2.mp4": "/static/media/bannerVideo.43d523b2.mp4",
     "static/media/discordLogo.fee1cdc1.jpg": "/static/media/discordLogo.fee1cdc1.jpg",
     "static/media/icon.43d2647e.jpg": "/static/media/icon.43d2647e.jpg",
     "static/media/youtubeLogo.4504d71f.png": "/static/media/youtubeLogo.4504d71f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fc5921c.js",
+    "static/js/runtime-main.df5d7dd0.js",
     "static/css/2.7104760a.chunk.css",
-    "static/js/2.1d36eebb.chunk.js",
-    "static/css/main.b0186dd1.chunk.css",
-    "static/js/main.05017cc8.chunk.js"
+    "static/js/2.c54fd09b.chunk.js",
+    "static/css/main.227fa7c6.chunk.css",
+    "static/js/main.cf9823d1.chunk.js"
   ]
 }
