@@ -1,9 +1,7 @@
 //Importing packages
-import { useEffect } from "react";
-import requests, { endPoint } from "../apiRequest.js";
+/*import requests, { endPoint } from "../apiRequest.js";
 
 //Get video data
-
 //Declear variables
 let count = 0;
 let total = 0;
@@ -68,9 +66,11 @@ requests.get(endPoint.Videos).then((data) => {
 //Export variables
 export default videoList;
 
+*/
 //Notes:
 /*Today I have put the api code in another file instead of in the main comopnent.
 And I also found some bugs in the loop listed below: */
+
 //TODO - remove /  rewrite this loop where bug found.
 //! BUG in loop at line: #27 getVideos.js
 //Bug note: this bug outputs and array which is 150.0 elements long, this also means that the loop ran 3 times correctly
