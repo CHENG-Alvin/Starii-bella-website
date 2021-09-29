@@ -9,10 +9,7 @@ let count = 0;
 let total = 0;
 let pageToken = undefined;
 let videoList = [];
-<<<<<<< Updated upstream
-=======
 let assigned = false;
->>>>>>> Stashed changes
 
 //Get data from API
 requests.get(endPoint.Videos).then((data) => {
@@ -26,13 +23,6 @@ requests.get(endPoint.Videos).then((data) => {
     .get(`${endPoint.Videos}&pageToken=${data.data.nextPageToken}`)
     .then((res) => {
       console.log(res);
-<<<<<<< Updated upstream
-
-      //Loop through video pages
-      while (count < total) {
-        //Assign page token
-        pageToken = res.data.nextPageToken;
-=======
       //Assign variable
       assigned = true;
       console.log(count < total);
@@ -41,7 +31,6 @@ requests.get(endPoint.Videos).then((data) => {
         //Assign page token
 
         if (assigned) pageToken = res.data.nextPageToken;
->>>>>>> Stashed changes
 
         //Try & catch statment
         try {
@@ -50,23 +39,16 @@ requests.get(endPoint.Videos).then((data) => {
             .get(`${endPoint.Videos}&pageToken=${pageToken}`)
             .then((response) => {
               pageToken = response.data.nextPageToken;
-<<<<<<< Updated upstream
-              console.log(response);
-=======
               assigned = false;
->>>>>>> Stashed changes
 
               //Map through video array
               response.data.items.map((dataSet) => {
                 videoList.push(dataSet.id.videoId);
               });
-<<<<<<< Updated upstream
-=======
               return response.data.nextPageToken;
             })
             .then((token) => {
               pageToken = token;
->>>>>>> Stashed changes
             });
         } catch (errorMessage) {
           //Catch / print the unexpected errors
@@ -77,13 +59,7 @@ requests.get(endPoint.Videos).then((data) => {
         count += 1;
         console.log(videoList);
       }
-<<<<<<< Updated upstream
-    })
-
-    //Catch the unexpected errors
-=======
     }) //Catch the unexpected error
->>>>>>> Stashed changes
     .catch((errorMessage) => {
       console.error(errorMessage);
     });
