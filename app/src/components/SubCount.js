@@ -1,7 +1,7 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
-import { API_KEY } from "../vars.js";
+import requests, { endPoint } from "../apiRequest.js";
 
 //SubCount component
 const SubCount = () => {
@@ -11,14 +11,10 @@ const SubCount = () => {
   useEffect(() => {
     //Get data from API
 
-    fetch(
-      `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCXc3hzORGb-osun3RcY0oOw&key=${API_KEY}`
-    )
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setSubCount(data.items[0].statistics.subscriberCount);
+    requests
+      .get(endPoint.subCount)
+      .then((response) => {
+        setSubCount(response.items[0].statistics.subscriberCount);
       })
       .catch((err) => console.log(err));
   }, []);
