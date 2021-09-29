@@ -7,6 +7,7 @@ import "./styles/HomeBanner.css";
 import MediaLink from "./MediaLink.js";
 
 //Banner component
+
 const HomeBanner = () => {
   //Render component
   return (
@@ -44,4 +45,5 @@ const HomeBanner = () => {
 };
 
 //Export component
+
 export default HomeBanner;

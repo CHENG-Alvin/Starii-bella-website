@@ -1,10 +1,8 @@
-////////////////////////////////!!!! IN DEVELOPMENT!!!!////////////////////////////////////////////////////
-
 //Importing packages
-import React, { useEffect } from "react";
+import React from "react";
 import NavBar from "./NavBar.js";
 import bannerVideo from "../content/VideoPageBanner.mp4";
-import { API_KEY } from "../vars.js";
+
 import "./styles/VideoPageBanner.css";
 
 //Banner component
@@ -22,6 +20,7 @@ const VideoBanner = () => {
       <div id="bannerContent">
         <div id="bannerText">
           {/*Channel name*/}
+
           <h1 id="bannerChannelName">Page comming soon!</h1>
           {/*Channel discription*/}
           <p id="bannerDiscription"></p>

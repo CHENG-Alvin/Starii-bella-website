@@ -16,8 +16,8 @@ const SubCount = () => {
       .then((response) => {
         setSubCount(response.items[0].statistics.subscriberCount);
       })
-      .catch((err) => console.log(err));
-  }, []);
+      .catch((err) => console.error(err));
+  });
   //Render component
   return (
     <div style={{ backgroundColor: "#4b95df", padding: "7.5% 15% 15% 15%" }}>

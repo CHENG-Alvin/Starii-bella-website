@@ -1,13 +1,13 @@
 //Importing packages
 import React from "react";
-import VideoBanner from "./VideoBanner.js";
+import CommingSoon from "./CommingSoon.js";
 
 //Shop page
 const Videos = () => {
   //Render component
   return (
     <div>
-      <VideoBanner />
+      <CommingSoon />
     </div>
   );
 };
