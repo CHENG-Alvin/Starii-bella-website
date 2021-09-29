@@ -14,7 +14,6 @@ const SubCount = () => {
     requests
       .get(endPoint.subCount)
       .then((response) => {
-        //! Error at Link 18
         setSubCount(response.data.items[0].statistics.subscriberCount);
       })
       .catch((err) => console.error(err));
