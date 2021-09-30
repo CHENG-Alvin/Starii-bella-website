@@ -15,7 +15,8 @@ Preview and new features link:
 https://starii-bella-website-preview.web.app
 
 ## Credits
-This website was created by Alvin Cheng
+Alvin Cheng - Software engineer
+
 
 ## Download policy 
 -Please credit me Alvin cheng if used in any kind of video or content.
@@ -23,3 +24,10 @@ This website was created by Alvin Cheng
 -Feel free to change / modify any parts of this website. 
 
 -Please do not push this website on the internet with out Alvin cheng's permission.
+
+## Bugs
+If you found any bugs or issues please post them on the issues tag above, and label it with a bug tag.
+
+For support or to report bugs please email Alvin cheng at:
+
+chengalvin333@gmail.com
