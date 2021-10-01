@@ -9,7 +9,7 @@ export const endPoint = {
   videos: `/search?part=snippet&channelId=UCXc3hzORGb-osun3RcY0oOw&maxResults=500&key=${API_KEY}`,
 };
 
-//Axios
+//Axios setup
 const requests = Axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
 });
