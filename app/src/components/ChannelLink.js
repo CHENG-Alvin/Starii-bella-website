@@ -5,7 +5,7 @@ import MediaLink from "./MediaLink.js";
 //ChannelLink component
 const ChannelLink = () => {
   return (
-    <div style={{ backgroundColor: "#4b95df", padding: "9vw" }}>
+    <div style={{ backgroundColor: "#4b95df", padding: "6vw" }}>
       {/*Tittle*/}
       <strong
         style={{
@@ -14,7 +14,7 @@ const ChannelLink = () => {
           color: "#fff",
         }}
       >
-        SUBSCRIBE TO SWAGGYDINOS
+        ALSO SUBSCRIBE TO SWAGGYDINOS!!
       </strong>
       {/*Link*/}
       <div style={{ padding: "3vw" }}>
