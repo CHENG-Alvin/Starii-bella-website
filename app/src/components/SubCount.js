@@ -1,7 +1,7 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
-import requests, { endPoint } from "../apiRequest.js";
+import requests, { endPoint } from "../scripts/apiRequest.js";
 
 //SubCount component
 const SubCount = () => {
