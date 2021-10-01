@@ -9,7 +9,7 @@ const ChannelLink = () => {
       {/*Tittle*/}
       <strong
         style={{
-          fontSize: "3vw",
+          fontSize: "5vw",
           fontFamily: "Bebas Neue, cursive",
           color: "#fff",
         }}
