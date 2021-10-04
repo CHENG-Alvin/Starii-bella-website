@@ -9,7 +9,9 @@ const Links = (props) => {
   return (
     <div id="whole">
       {/*Tittle*/}
-      <h1 id="tittle">{props.tittle}</h1>
+      <h1 id="tittle" style={{ fontSize: "4vw" }}>
+        {props.tittle}
+      </h1>
 
       {/*Link*/}
       <MediaLink
@@ -17,7 +19,7 @@ const Links = (props) => {
         textColor="#4b95df"
         text={props.btnText}
         backgroundColor="white"
-        borderRad="60px 60px 60px 60px"
+        borderRad="9vh"
         borderColor="#4b95df"
         link={props.link}
         fontFamily="Bebas Neue, cursive"

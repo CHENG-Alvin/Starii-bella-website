@@ -5,7 +5,7 @@ import "./styles/MediaLink.css";
 const MediaLink = (props) => {
   //Styles:
   const linkStyle = {
-    fontFamily: "Poppins, sans-serif" || props.fontFamily,
+    fontFamily: props.fontFamily || "Poppins, sans-serif",
     border: `1px solid ${props.borderColor}`,
     color: props.textColor || "black",
     backgroundColor: props.backgroundColor || "transparent",

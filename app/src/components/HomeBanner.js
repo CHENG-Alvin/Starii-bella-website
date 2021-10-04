@@ -28,14 +28,16 @@ const HomeBanner = () => {
           {/*Channel discription*/}
           <p id="bannerDiscription">Roblox edits, Gameplay and more!</p>
           {/*Subscribe link*/}
-          <MediaLink
-            borderColor="#ffff"
-            textColor="black"
-            borderRad="0.5rem"
-            backgroundColor="#ffff"
-            text="Subscribe!"
-            link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
-          />
+          <div style={{ padding: "1vw" }}>
+            <MediaLink
+              borderColor="#ffff"
+              textColor="black"
+              borderRad="0.5rem"
+              backgroundColor="#ffff"
+              text="Subscribe!"
+              link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
+            />
+          </div>
         </div>
       </div>
       {/*Background Video*/}

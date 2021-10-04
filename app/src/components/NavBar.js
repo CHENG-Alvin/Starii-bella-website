@@ -24,7 +24,7 @@ const NavBar = (props) => {
 
   //Rendering component
   return (
-    <div style={parentStyle}>
+    <div id="parent" style={parentStyle}>
       <div style={containerStyle}>
         {/*Link to home page*/}
         <Link to="/" className="link" style={linkStyle}>

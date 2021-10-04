@@ -34,15 +34,16 @@ const SubCount = () => {
       {/*Subscription count*/}
       <h1 style={{ color: "#ffff" }}>{subCount}</h1>
       {/*Subscibe link*/}
-      <MediaLink
-        style={{ paddingTop: "2rem" }}
-        borderColor="#ffff"
-        textColor="black"
-        borderRad="0.5rem"
-        backgroundColor="#ffff"
-        text="SUBSCRIBE NOW!"
-        link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
-      />
+      <div style={{ padding: ".5rem" }}>
+        <MediaLink
+          borderColor="#ffff"
+          textColor="black"
+          borderRad="0.5rem"
+          backgroundColor="#ffff"
+          text="SUBSCRIBE NOW!"
+          link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
+        />
+      </div>
     </div>
   );
 };

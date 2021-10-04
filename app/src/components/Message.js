@@ -2,7 +2,7 @@ import React from "react";
 
 const Message = () => {
   return (
-    <div>
+    <div style={{ padding: "5vw" }}>
       <h1
         style={{
           fontFamily: "Bebas Neue, cursive",
