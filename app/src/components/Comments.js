@@ -12,14 +12,21 @@ const Comments = () => {
     <div
       style={{
         backgroundColor: "#4b95df",
-        padding: "3vw",
+        padding: "4vw",
         margin: "0vw 0vw 3vw 0vw",
       }}
     >
       {/*Top level*/}
       <div id="topLevel">
         {/*Tittle text*/}
-        <h1 style={{ color: "#ffff", fontFamily: "Bebas Neue, cursive" }}>
+
+        <h1
+          style={{
+            color: "#ffff",
+            fontFamily: "Bebas Neue, cursive",
+            fontSize: "4vw",
+          }}
+        >
           What the viewers say:
         </h1>
         {/*Comments*/}
