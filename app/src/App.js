@@ -1,6 +1,6 @@
 //Importing packages
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Videos from "./components/Videos.js";
+import PartnerPage from "./components/PartnerPage.js";
 import Shop from "./components/Shop.js";
 import Home from "./components/Home.js";
 import "./App.css";
@@ -16,8 +16,8 @@ const App = () => {
           <Route path="/" exact component={Home} />
           {/*Shop Route*/}
           <Route path="/shop" exact component={Shop} />
-          {/*Video Route*/}
-          <Route path="/Videos" exact component={Videos} />
+          {/*Colab Route*/}
+          <Route path="/partner" exact compoent={PartnerPage} />
         </Switch>
       </Router>
     </div>

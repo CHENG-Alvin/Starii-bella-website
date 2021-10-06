@@ -62,7 +62,7 @@ const Home = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
-              style={{ position: "relative", bottom: "3vw" }}
+              style={{ position: "relative", bottom: "3.5vw" }}
             >
               <path
                 fill="#4b95df"
@@ -73,25 +73,34 @@ const Home = () => {
           </div>
         </div>
         {/*Links*/}
-        <div id="links" data-aos="fade-down" data-aos-easing="ease-in-out">
+        <div id="links" data-aos="slide-right" data-aos-easing="ease-in-out">
           {/*Youtube link*/}
-          <Links
-            id="mediaLinks"
-            imgSrc={youtubeLogo}
-            btnText="Watch more!"
-            tittle="More in depth!"
-            link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
-            iconPadding="8vh"
-          />
-          {/*Discord link*/}
-          <Links
-            id="mediaLinks"
-            imgSrc={discordLogo}
-            btnText="Join now!"
-            tittle="Let's chat!"
-            link="https://discord.gg/XFTtKjwr73"
-            iconPadding="8vh"
-          />
+          <div
+            style={{
+              textAlign: "center",
+              justifyContent: "space-around",
+              display: "flex",
+            }}
+          >
+            <Links
+              id="mediaLinks"
+              imgSrc={youtubeLogo}
+              btnText="Watch more!"
+              tittle="More in depth!"
+              link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
+              iconPadding="8vh"
+            />
+
+            {/*Discord link*/}
+            <Links
+              id="mediaLinks"
+              imgSrc={discordLogo}
+              btnText="Join now!"
+              tittle="Let's chat!"
+              link="https://discord.gg/XFTtKjwr73"
+              iconPadding="8vh"
+            />
+          </div>
         </div>
         <div id="subCounter" data-aos="fade-up">
           {/*SVG curves*/}

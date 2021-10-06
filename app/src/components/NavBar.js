@@ -30,9 +30,9 @@ const NavBar = (props) => {
         <Link to="/" className="link" style={linkStyle}>
           Home
         </Link>
-        {/*Link to videos page*/}
-        <Link to="/videos" className="link" style={linkStyle}>
-          Content
+        {/*Link to partner page*/}
+        <Link to="/partner" className="link" style={linkStyle}>
+          Partner
         </Link>
         {/*Link to shop page*/}
         <Link to="/shop" className="link" style={linkStyle}>

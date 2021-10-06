@@ -25,6 +25,17 @@ const Message = () => {
         Simply Metallic! My name is Bella and I hope you love my video! Also
         welcome to Starii Bella ୨୧
       </h1>
+      <div
+        style={{
+          backgroundColor: "rgb(113, 221, 233)",
+          textAlign: "center",
+          justifyContent: "center",
+
+          height: "1vh",
+          width: "10vw",
+          margin: "auto",
+        }}
+      />
     </div>
   );
 };
