@@ -1,7 +1,7 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
-import requests, { endPoint } from "../scripts/apiRequest.js";
+import youtubeRequests, { youtubeEndPoint } from "../scripts/apiRequest.js";
 
 //SubCount component
 const SubCount = () => {
@@ -11,12 +11,21 @@ const SubCount = () => {
   useEffect(() => {
     //Get data from API
 
-    requests
-      .get(endPoint.subCount)
+    youtubeRequests
+      .get(youtubeEndPoint.subCount)
       .then((response) => {
+        //Assign variables
         setSubCount(response.data.items[0].statistics.subscriberCount);
+        i;
+        console.log("[Debug]Fetching api data..");
       })
-      .catch((err) => console.error(err));
+      //Error handling
+      .catch((err) => {
+        console.error(err);
+        console.log(
+          "[Debug]There was a error in SubCount.js line 21(In promise)"
+        );
+      });
   });
   //Render component
   return (
@@ -41,7 +50,7 @@ const SubCount = () => {
           borderRad="0.5rem"
           backgroundColor="#ffff"
           text="SUBSCRIBE NOW!"
-          link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
+          link="https://www.bitlylinks.com/2raIfgwIY"
         />
       </div>
     </div>

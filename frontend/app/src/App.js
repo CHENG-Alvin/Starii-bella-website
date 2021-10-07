@@ -17,7 +17,7 @@ const App = () => {
           {/*Shop Route*/}
           <Route path="/shop" exact component={Shop} />
           {/*Colab Route*/}
-          <Route path="/partner" exact compoent={PartnerPage} />
+          <Route path="/partner" exact component={PartnerPage} />
         </Switch>
       </Router>
     </div>

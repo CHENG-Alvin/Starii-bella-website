@@ -25,7 +25,7 @@ const ChannelLink = () => {
           backgroundColor="red"
           borderRad="0px"
           borderColor="#4b95df"
-          link="https://www.youtube.com/channel/UC3wdFUo2NqeQxg0_u6-M8QQ"
+          link="https://www.bitlylinks.com/aswPnQ3Ah"
         />
       </div>
     </div>

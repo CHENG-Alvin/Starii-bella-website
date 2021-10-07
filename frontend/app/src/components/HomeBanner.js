@@ -35,7 +35,7 @@ const HomeBanner = () => {
               borderRad="0.5rem"
               backgroundColor="#ffff"
               text="Subscribe!"
-              link="https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw"
+              link="https://www.bitlylinks.com/2raIfgwIY"
             />
           </div>
         </div>

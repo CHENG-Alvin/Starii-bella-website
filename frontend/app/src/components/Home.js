@@ -17,11 +17,20 @@ const Home = () => {
   //Aos Init
   useEffect(() => {
     Aos.init({ duration: 1500 });
+    console.log("[Debug]Aos init complete");
+    console.log("[Debug]Waiting for user respond");
     setTimeout(() => {
       alert(
         "Welcome to the Starii bella website! This is the preview version this means, there might be some bugs or issues in the website. Further more the content and shop page is still not completed.\nThank you!"
       );
+      console.log("[Debug]User setup complete!");
     }, 1000);
+    console.log("%c HOLD UP", "color:red; font-size: 89px;");
+    console.log("Please Close the debug window");
+    console.log("%c HOLD UP", "color:red; font-size: 89px;");
+    console.log(
+      "If you knwo what you are doing, come work with us for entrys go to the discord channel."
+    );
   }, []);
 
   //Render component
