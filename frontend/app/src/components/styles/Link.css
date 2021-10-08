@@ -1,37 +1,12 @@
 /*Link CSS file:*/
-@media all and (max-width: 1000px) {
-  #icon {
-    height: 20vh;
-  }
+#icon {
+  height: 15vw;
+  object-fit: contain;
+}
 
-  #tittle {
-    font-size: 2rem;
-    padding: 0.5rem;
-    color: #040132;
-    font-family: "Bebas Neue", cursive;
-  }
-}
-@media all and (min-width: 1000px) {
-  #icon {
-    height: 25vh;
-    padding: 2.5rem;
-  }
-  #tittle {
-    font-size: 2.5rem;
-    color: #040132;
-    padding: 1rem;
-    font-family: "Bebas Neue", cursive;
-  }
-}
-@media all and (max-width: 750px) {
-  #icon {
-    height: 14vh;
-    padding: 0.5rem;
-  }
-  #tittle {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    color: #040132;
-    font-family: "Bebas Neue", cursive;
-  }
+#tittle {
+  font-size: 2vw;
+  padding: 0.5rem;
+  color: #040132;
+  font-family: "Bebas Neue", cursive;
 }
