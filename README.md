@@ -33,7 +33,9 @@ If you found any bugs or issues please post them on the issues tag above, and la
 For support or to report bugs please contact Alvin cheng at:
 
 Email:
+
 chengalvin333@gmail.com
 
 Discord:
+
 AlvinC#2300
