@@ -25,9 +25,17 @@ Alvin Cheng - Software engineer
 
 - Please do not push this website on the internet with out Alvin cheng's permission.
 
+By downloading you agree to all policy rules and github community guidlines.
+
 ## Bugs
 If you found any bugs or issues please post them on the issues tag above, and label it with a bug tag.
 
-For support or to report bugs please email Alvin cheng at:
+For support or to report bugs please contact Alvin cheng at:
+
+Email:
 
 chengalvin333@gmail.com
+
+Discord:
+
+AlvinC#2300
