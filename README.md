@@ -47,9 +47,7 @@ If you want to make this software work please get your OWN api keys.
 APIs that I used:
 - Youtube data api - https://developers.google.com/youtube/v3/
 - My own custom backend api (Not for public use)
-#
-#
-#
-#
+
+
 #
 Website for Bella ZOU(Starii bella) Created / Designed by Alvin CHENG, OPEN SOURCE AND PUBLIC.
