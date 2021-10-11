@@ -40,6 +40,12 @@ Discord:
 
 AlvinC#2300
 
+## Modify and contribution
+If you would like to contribute to this website that will be fantastic! 
+to contribute please create a pull request in github and submit it to me(Alvin CHENG)
+if your changes are approved It will be added to the website.
+
+Thanks!
 ## API Infomation
 All API keys are hidden from source control and have been kept on the local machine.
 If you want to make this software work please get your OWN api keys.
