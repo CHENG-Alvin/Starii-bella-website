@@ -39,3 +39,11 @@ chengalvin333@gmail.com
 Discord:
 
 AlvinC#2300
+
+## API Infomation
+All API keys are hidden from source control and have been kept on the local machine.
+If you want to make this software work please get your OWN api keys.
+
+APIs that I used:
+- Youtube data api - https://developers.google.com/youtube/v3/
+- My own custom backend api (Not for public use)
