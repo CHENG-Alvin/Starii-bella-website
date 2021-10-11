@@ -19,11 +19,11 @@ Alvin Cheng - Software engineer
 
 
 ## Download policy 
-- Please credit me Alvin cheng if used in any kind of video or content.
+- Please credit me(Alvin cheng) if used in any kind of video or content.
 
 - Feel free to change / modify any parts of this website. 
 
-- Please do not push this website on the internet with out Alvin cheng's permission.
+- Please do not upload this website on the internet with out Alvin cheng's permission.
 
 By downloading you agree to all policy rules and github community guidlines.
 
