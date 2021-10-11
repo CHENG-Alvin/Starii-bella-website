@@ -1,6 +1,6 @@
 ## Starii bella website
 This website is the website that is for the Starii Bella youtube channel,
-this github page has the opem source code of the Starii bella website! Please scroll down for more info...
+this github page has the open source code of the Starii bella website! Please scroll down for more info...
 
 ### Channel link:
 https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw
