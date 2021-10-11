@@ -1,5 +1,3 @@
-User-agent:*
-Allow: /
-Allow: /Videos
-Disallow: /Shop
-Crawl-delay: 120
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:

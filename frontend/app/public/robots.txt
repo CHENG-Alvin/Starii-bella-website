@@ -1,3 +1,4 @@
-user-agent:*
+User-agent:*
 Disallow: /
-# All paths Disallowed.
+Disallow: /Videos
+Disallow: /Shop
