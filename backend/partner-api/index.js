@@ -10,8 +10,13 @@ const app = express();
 //MongoDB Connection
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-//Home get endpoint
+//Port number variable
 const PORT = "8080";
+
+//Json middleware
+app.use(express.json());
+
+//Home get endpoint
 app.get("/", (req, res) => {
   res
     .status(401)
@@ -21,22 +26,37 @@ app.get("/", (req, res) => {
 });
 
 //Post message endpoint
-app.post(`/api/contact&key=${KEY}`, (req, res) => {
+app.post(`/api/partner`, (req, res) => {
   //Create new document
-  //Try & catch for error handling
-  try {
-    const newContactItem = new dbElement({
-      id: req.body.id,
-      message: req.body.message,
+  const newItem = new dbElement({
+    dbName: req.body.name,
+    dbEmail: req.body.email,
+    dbPhone: req.body.phone,
+    dbMessage: req.body.message,
+  });
+
+  //Save Item
+  newItem
+    .save()
+    .then(() => {
+      res.status(201);
+      console.log("Server: Data sent, no errors / problems.");
+    })
+    .catch((err) => {
+      res.status(500).send(`SERVER ERROR: ${err}`);
+      console.log(err);
     });
-    //Save Item
-    newContactItem.save().then(() => {
-      res.status(201).send("Server: Data sent, no errors / problems.");
-    });
-  } catch (error) {
-    res.status(500).send(`SERVER ERROR: ${error}, Please try again.`);
-  }
 });
+
+//404 page
+const notFound = (req, res, next) => {
+  res
+    .status(404)
+    .send(
+      "REQUEST ERROR: Sorry,\nThe page that you are trying to access is not found.Please enter a valid URL."
+    );
+};
+app.use(notFound);
 
 //Listen / run server on port 8080
 app.listen(PORT, () => {

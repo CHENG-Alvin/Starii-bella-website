@@ -3,8 +3,10 @@ import mongoose from "mongoose";
 
 //Database Schema
 const dbShema = mongoose.Schema({
-  id: String,
-  message: String,
+  dbName: String,
+  dbEmail: String,
+  dbPhone: String,
+  dbMessage: String,
 });
 
 //Export Schema
