@@ -17,6 +17,14 @@ https://starii-bella-website-preview.web.app
 ## Credits
 Alvin Cheng - Software engineer
 
+Facebook - React Libary
+
+Express Team - Express.js
+
+MongoDB Team - MongoDB
+
+OpenJs org - Node.js
+
 
 ## Download policy 
 - Please credit me(Alvin cheng) if used in any kind of video or content.
