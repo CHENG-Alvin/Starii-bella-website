@@ -25,10 +25,26 @@ app.get("/", (req, res) => {
     );
 });
 
+//Get all data endpoint
+app.get("/api/partner/get", (req, res) => {
+  //Find all elements
+  dbElement
+    .find()
+    .exec()
+    .then((data) => {
+      res.status(200).send(data);
+    })
+    .catch((err) => {
+      res.status(500).send(`SERVER ERROR: ${err}`);
+      console.log(err);
+    });
+});
+
 //Post message endpoint
-app.post(`/api/partner`, (req, res) => {
+app.post(`/api/partner/post`, (req, res) => {
   //Create new document
   const newItem = new dbElement({
+    dbId: req.body.id,
     dbName: req.body.name,
     dbEmail: req.body.email,
     dbPhone: req.body.phone,
@@ -39,8 +55,7 @@ app.post(`/api/partner`, (req, res) => {
   newItem
     .save()
     .then(() => {
-      res.status(201);
-      console.log("Server: Data sent, no errors / problems.");
+      res.status(201).send("Server: Data sent, no errors / problems.");
     })
     .catch((err) => {
       res.status(500).send(`SERVER ERROR: ${err}`);
