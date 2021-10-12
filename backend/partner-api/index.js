@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 //Get all data endpoint
-app.get("/api/partner/get", (req, res) => {
+app.get(`/api/partner/get?key=${KEY}`, (req, res) => {
   //Find all elements
   dbElement
     .find()
@@ -41,7 +41,7 @@ app.get("/api/partner/get", (req, res) => {
 });
 
 //Post message endpoint
-app.post(`/api/partner/post`, (req, res) => {
+app.post(`/api/partner/post?key=${KEY}`, (req, res) => {
   //Create new document
   const newItem = new dbElement({
     dbId: req.body.id,
