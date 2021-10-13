@@ -5,6 +5,11 @@ this github page has the open source code of the Starii bella website! Please sc
 
 ### Channel link:
 
+This website is the website that is for the Starii Bella youtube channel,
+this github page has the opem source code of the Starii bella website! Please scroll down for more info...
+
+### Channel link:
+
 https://www.youtube.com/channel/UCXc3hzORGb-osun3RcY0oOw
 
 ^^^ Please make sure to subscirbe to this channel above ^^^
@@ -35,7 +40,16 @@ OpenJs org - Node.js
 
 - Feel free to change / modify any parts of this website.
 
-- Please do not upload this website on the internet with out Alvin cheng's permission.
+- # Please do not upload this website on the internet with out Alvin cheng's permission.
+  Alvin Cheng - Software engineer
+
+## Download policy
+
+- Please credit me Alvin cheng if used in any kind of video or content.
+
+- Feel free to change / modify any parts of this website.
+
+- Please do not push this website on the internet with out Alvin cheng's permission.
 
 By downloading you agree to all policy rules and github community guidlines.
 

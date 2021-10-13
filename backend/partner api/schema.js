@@ -1,4 +1,3 @@
-
 //Importing packages
 import mongoose from "mongoose";
 
@@ -9,4 +8,6 @@ const dbShema = mongoose.Schema({
 });
 
 //Export Schema
-export default mongoose.model("shema", dbShema);
+
+export default mongoose.model("dbElement", dbShema);
+

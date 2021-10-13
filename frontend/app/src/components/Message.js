@@ -14,14 +14,17 @@ const Message = () => {
           fontSize: "4vw",
         }}
       >
+
         A message from Starii Bella:
       </h2>
       {/*Message */}
       <h2
         style={{
           fontFamily: "Bebas Neue, cursive",
+
           padding: "0vw 10vw 0vw 10vw",
           fontSize: "3vw",
+
         }}
       >
         Hi lovelies! I hope you like my videos I’m gonna upload and my dream is
@@ -30,6 +33,7 @@ const Message = () => {
         Simply Metallic! My name is Bella and I hope you love my video! Also
         welcome to Starii Bella ୨୧
       </h2>
+
       <div
         style={{
           height: "1vw",
@@ -42,6 +46,7 @@ const Message = () => {
           left: "40%",
         }}
       />
+
     </div>
   );
 };
