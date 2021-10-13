@@ -10,8 +10,8 @@ const NavBar = (props) => {
     color: props.color,
     backgroundColor: props.backgroundColor,
     textDecoration: "none",
-    fontSize: "1.5rem",
-    fontFamily: "Poppins, sans-serif",
+    fontSize: "2.5vw",
+    fontFamily: "Nunito, sans-serif",
     padding: "1rem",
     fontWeight: "bold",
   };

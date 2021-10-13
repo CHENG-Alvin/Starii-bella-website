@@ -1,7 +1,7 @@
 //Importing packages
 import React, { useEffect, useState } from "react";
 import MediaLink from "./MediaLink.js";
-import youtubeRequests, { youtubeEndPoint } from "../scripts/apiRequest.js";
+import { youtubeRequests, youtubeEndPoint } from "../scripts/apiRequest.js";
 
 //SubCount component
 const SubCount = () => {
@@ -16,7 +16,6 @@ const SubCount = () => {
       .then((response) => {
         //Assign variables
         setSubCount(response.data.items[0].statistics.subscriberCount);
-        i;
         console.log("[Debug]Fetching api data..");
       })
       //Error handling

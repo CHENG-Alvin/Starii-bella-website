@@ -2,6 +2,7 @@
 @media all and (max-width: 1000px) {
   #icon {
     height: 20vh;
+    padding: 1rem;
   }
 
   #tittle {

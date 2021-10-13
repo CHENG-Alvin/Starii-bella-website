@@ -1,5 +1,3 @@
-//Importing packages
-import React from "react";
 import comment1 from "../content/Comment1.PNG";
 import comment2 from "../content/Comment2.PNG";
 import comment3 from "../content/Comment3.PNG";
@@ -30,9 +28,24 @@ const Comments = () => {
           What the viewers say:
         </h1>
         {/*Comments*/}
-        <img src={comment1} id="comment"></img>
-        <img src={comment2} id="comment"></img>
-        <img src={comment3} id="comment"></img>
+        <img
+          src={comment1}
+          id="comment"
+          alt="error"
+          style={{ width: "30vw", objectFit: "contain", marginLeft: "2vw" }}
+        ></img>
+        <img
+          src={comment2}
+          id="comment"
+          alt="error"
+          style={{ width: "30vw", objectFit: "contain", marginRight: "5vw" }}
+        ></img>
+        <img
+          src={comment3}
+          id="comment"
+          alt="error"
+          style={{ width: "30vw", objectFit: "contain", marginRight: "2vw" }}
+        ></img>
       </div>
     </div>
   );
