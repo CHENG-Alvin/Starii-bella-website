@@ -67,3 +67,4 @@ const Home = () => {
 
 //Export component
 export default Home;
+gt;
