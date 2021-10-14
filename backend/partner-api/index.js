@@ -2,7 +2,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import message from "./schema.js";
-import nodeMailer from "nodemailer";
+import nodemailer from "nodemailer";
 import { URI, KEY } from "./vars.js";
 
 //Express setup
@@ -11,8 +11,10 @@ const app = express();
 //MongoDB Connection
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-//Port number variable
+//Variables
 const PORT = "8080";
+let databaseOk = false;
+let emailOk = false;
 
 //Json middleware
 app.use(express.json());
@@ -56,7 +58,7 @@ app.post(`/api/partner/post`, (req, res) => {
   newItem
     .save()
     .then(() => {
-      res.status(201).send("Server: Data sent, no errors / problems.");
+      databaseOk = true;
     })
     .catch((err) => {
       res.status(500).send(`SERVER ERROR: ${err}`);
@@ -65,30 +67,35 @@ app.post(`/api/partner/post`, (req, res) => {
 
   //Send email
   //Transporter
-  const transporter = nodeMailer.createTransport({
+  let transporter = nodemailer.createTransport({
+    service: req.body.service,
     auth: {
-      user: "ACHET@schools.vic.edu.au",
+      user: "ACHET@SCHOOLS.VIC.EDU.AU",
       pass: "Skunk.7859",
     },
   });
 
   //Mail options
-  const mailOptions = {
-    from: "ACHET@schools.vic.edu.au",
-    to: req.body.email,
-    subject: `New colab request from ${req.body.name}.`,
+  let mailOptions = {
+    from: "ACHET@SCHOOLS.VIC.EDU.AU",
+    to: "chengalvin333@gmail.com",
+    subject: `New partner request from ${req.body.name}.`,
     text: `${req.body.name} has sent you a partner request, \nHe / she says: "${req.body.message}" \nMore infomation: \nEmail: ${req.body.email} \nPhone number: ${req.body.phone} \nTo respond please contact the person with the provied infomation.`,
   };
 
   //Send mail
   transporter.sendMail(mailOptions, (err, data) => {
-    if (err)
-      res
-        .status(500)
-        .send(
-          "SERVER ERROR: An error occurred while trying to send the email, please try again."
-        );
+    if (err) console.log(err);
+    else emailOk = true;
   });
+
+  //Check ok status
+  if (emailOk && databaseOk)
+    res.status(201).send("Server: Data sent, no errors / problems.");
+
+  //Reset status
+  databaseOk = false;
+  emailOk = false;
 });
 
 //404 page
