@@ -7,14 +7,24 @@ const Message = () => {
   return (
     <div>
       {/*Tittle*/}
-      <h2 style={{ fontFamily: "Bebas Neue, cursive", paddingTop: "15vw" }}>
+      <h2
+        style={{
+          fontFamily: "Bebas Neue, cursive",
+          paddingTop: "15vw",
+          fontSize: "4vw",
+        }}
+      >
+
         A message from Starii Bella:
       </h2>
       {/*Message */}
       <h2
         style={{
           fontFamily: "Bebas Neue, cursive",
-          padding: "0vw 10vw 12vw 10vw",
+
+          padding: "0vw 10vw 0vw 10vw",
+          fontSize: "3vw",
+
         }}
       >
         Hi lovelies! I hope you like my videos I’m gonna upload and my dream is
@@ -23,9 +33,24 @@ const Message = () => {
         Simply Metallic! My name is Bella and I hope you love my video! Also
         welcome to Starii Bella ୨୧
       </h2>
+
+      <div
+        style={{
+          height: "1vw",
+          width: "17vw",
+          backgroundColor: "#3cdfdd",
+
+          position: "relative",
+          top: "0",
+          marginBottom: "2rem",
+          left: "40%",
+        }}
+      />
+
     </div>
   );
 };
 
 //Export component
 export default Message;
+
