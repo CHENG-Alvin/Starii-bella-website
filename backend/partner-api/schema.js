@@ -11,4 +11,4 @@ const dbShema = mongoose.Schema({
 });
 
 //Export Schema
-export default mongoose.model("dbElement", dbShema);
+export default mongoose.model("message", dbShema);

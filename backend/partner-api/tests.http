@@ -1,9 +1,9 @@
-POST http://localhost:8080/api/partner/post?key=A1s2d3f4.888.5165 http/1.1
+POST http://localhost:8080/api/partner/post http/1.1
 Content-type: application/json
 
 {
 "name":"john smith",
-"email": "john_smith@gmail.com",
+"email": "chengalvin333@gmail.com",
 "phone": "+61 0412345678",
 "message": "Hi there!"
 }

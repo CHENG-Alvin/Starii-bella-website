@@ -1,7 +1,8 @@
 //Importing packages
 import express from "express";
 import mongoose from "mongoose";
-import dbElement from "./schema.js";
+import message from "./schema.js";
+import nodeMailer from "nodemailer";
 import { URI, KEY } from "./vars.js";
 
 //Express setup
@@ -28,7 +29,7 @@ app.get("/", (req, res) => {
 //Get all data endpoint
 app.get(`/api/partner/get?key=${KEY}`, (req, res) => {
   //Find all elements
-  dbElement
+  message
     .find()
     .exec()
     .then((data) => {
@@ -41,9 +42,9 @@ app.get(`/api/partner/get?key=${KEY}`, (req, res) => {
 });
 
 //Post message endpoint
-app.post(`/api/partner/post?key=${KEY}`, (req, res) => {
+app.post(`/api/partner/post`, (req, res) => {
   //Create new document
-  const newItem = new dbElement({
+  const newItem = new message({
     dbId: req.body.id,
     dbName: req.body.name,
     dbEmail: req.body.email,
@@ -61,6 +62,33 @@ app.post(`/api/partner/post?key=${KEY}`, (req, res) => {
       res.status(500).send(`SERVER ERROR: ${err}`);
       console.log(err);
     });
+
+  //Send email
+  //Transporter
+  const transporter = nodeMailer.createTransport({
+    auth: {
+      user: "ACHET@schools.vic.edu.au",
+      pass: "Skunk.7859",
+    },
+  });
+
+  //Mail options
+  const mailOptions = {
+    from: "ACHET@schools.vic.edu.au",
+    to: req.body.email,
+    subject: `New colab request from ${req.body.name}.`,
+    text: `${req.body.name} has sent you a partner request, \nHe / she says: "${req.body.message}" \nMore infomation: \nEmail: ${req.body.email} \nPhone number: ${req.body.phone} \nTo respond please contact the person with the provied infomation.`,
+  };
+
+  //Send mail
+  transporter.sendMail(mailOptions, (err, data) => {
+    if (err)
+      res
+        .status(500)
+        .send(
+          "SERVER ERROR: An error occurred while trying to send the email, please try again."
+        );
+  });
 });
 
 //404 page
