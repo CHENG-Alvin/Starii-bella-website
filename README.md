@@ -40,7 +40,7 @@ OpenJs org - Node.js
 
 - Feel free to change / modify any parts of this website.
 
-- # Please do not upload this website on the internet with out Alvin cheng's permission.
+- Please do not upload this website on the internet with out Alvin cheng's permission.
   Alvin Cheng - Software engineer
 
 ## Download policy
