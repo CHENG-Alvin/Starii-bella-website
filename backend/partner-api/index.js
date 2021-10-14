@@ -3,13 +3,19 @@ import express from "express";
 import mongoose from "mongoose";
 import message from "./schema.js";
 import nodemailer from "nodemailer";
-import { URI, KEY } from "./vars.js";
+import dotenv from "dotenv";
+
+//Env config
+dotenv.config();
 
 //Express setup
 const app = express();
 
 //MongoDB Connection
-mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 //Variables
 const PORT = "8080";
@@ -29,7 +35,7 @@ app.get("/", (req, res) => {
 });
 
 //Get all data endpoint
-app.get(`/api/partner/get?key=${KEY}`, (req, res) => {
+app.get(`/api/partner/get?key=${process.env.KEY}`, (req, res) => {
   //Find all elements
   message
     .find()
