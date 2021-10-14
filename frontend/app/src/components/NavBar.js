@@ -1,3 +1,4 @@
+
 //Importing packages
 import React from "react";
 import "./styles/HomeBanner.css";
@@ -47,3 +48,4 @@ const NavBar = (props) => {
 
 //Export component
 export default NavBar;
+
