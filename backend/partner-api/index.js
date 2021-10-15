@@ -83,7 +83,7 @@ app.post(`/api/partner/post`, (req, res) => {
 
   //Mail options
   let mailOptions = {
-    from: "ACHET@SCHOOLS.VIC.EDU.AU",
+    from: "stariibellawebsite@gmail.com",
     to: "chengalvin333@gmail.com",
     subject: `New partner request from ${req.body.name}.`,
     text: `${req.body.name} has sent you a partner request, \nHe / she says: "${req.body.message}" \nMore infomation: \nEmail: ${req.body.email} \nPhone number: ${req.body.phone} \nTo respond please contact the person with the provied infomation.`,
