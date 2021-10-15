@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\backend",
+    "\\backend\\partner-api",
+    "\\frontend",
     "\\frontend\\app",
-    "\\frontend\\app\\src"
+    "\\frontend\\app\\src",
+    "\\frontend\\app\\src\\components",
+    "\\frontend\\app\\src\\scripts"
   ],
-  "SelectedNode": "\\backend\\server.js",
+  "SelectedNode": "\\backend\\partner-api\\index.js",
   "PreviewInSolutionExplorer": false
 }
