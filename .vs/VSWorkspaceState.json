@@ -1,14 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend",
-    "\\backend\\partner-api",
     "\\frontend",
     "\\frontend\\app",
-    "\\frontend\\app\\src",
-    "\\frontend\\app\\src\\components",
-    "\\frontend\\app\\src\\scripts"
+    "\\frontend\\app\\src"
   ],
-  "SelectedNode": "\\backend\\partner-api",
+  "SelectedNode": "\\frontend\\app\\.firebaserc",
   "PreviewInSolutionExplorer": false
 }
