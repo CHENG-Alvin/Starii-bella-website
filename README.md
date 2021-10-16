@@ -1,5 +1,7 @@
 ## Starii bella website
 
+## Index
+
 This website is the website that is for the Starii Bella youtube channel,
 this github page has the open source code of the Starii bella website! Please scroll down for more info...
 
