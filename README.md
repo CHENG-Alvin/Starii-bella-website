@@ -87,4 +87,4 @@ APIs that I used:
 
 #
 
-Website for Bella ZOU(Starii bella) Created / Designed by Alvin CHENG, OPEN SOURCE AND PUBLIC.
+Website for Bella ZOU(Starii bella) Created / Custom Designed by Alvin CHENG (c) 2021-2022, open source and public.
